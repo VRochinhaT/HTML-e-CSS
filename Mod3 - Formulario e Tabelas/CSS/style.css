@@ -10,18 +10,18 @@ header {
   margin: 0 auto;
 }
 
-.caixa nav {
+nav {
   position: absolute;
   top: 110px;
   right: 0;
 }
 
-.caixa nav li {
+nav li {
   display: inline;
   margin-left: 15px;
 }
 
-.caixa nav a {
+nav a {
   text-transform: uppercase;
   color: #000000;
   font-weight: bold;
@@ -29,54 +29,57 @@ header {
   text-decoration: none;
 }
 
-.caixa nav a:hover {
+nav a:hover {
   color: #c78c19;
   text-decoration: underline;
 }
 
-#banner {
-  width: 100%;
+.produtos {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0;
 }
 
-.principal {
-  background: #cccccc;
-  padding: 30px;
-}
-
-.titulo-centralizado {
-  text-align: center;
-}
-
-p {
-  text-align: center;
-}
-
-#missao {
-  font-size: 20px;
-}
-
-em strong {
-  color: #ff0000;
-}
-
-.itens {
-  font-style: italic;
-}
-
-.beneficios {
-  background: #ffffff;
-  padding: 20px;
-}
-
-main ul {
+.produtos li {
   display: inline-block;
   vertical-align: top;
-  width: 20%;
-  margin-right: 15%;
+  text-align: center;
+  width: 30%;
+  margin: 0 1.49%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  /*   border-color: #000000;
+  border-width: 2px;
+  border-style: solid;*/
+  border: 2px solid #000000;
+  border-radius: 10px 40px;
 }
 
-.imagembeneficios {
-  width: 50%;
+.produtos li:hover {
+  border-color: #c78c19;
+}
+
+.produtos li:active {
+  border-color: #088c19;
+}
+
+.produtos li:hover h2 {
+  font-size: 34px;
+}
+
+.produtos h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.produto-descricao {
+  font-size: 18px;
+}
+
+.produto-preco {
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 footer {
@@ -89,4 +92,66 @@ footer p {
   color: #ffffff;
   font-size: 13px;
   margin-top: 20px;
+}
+
+main {
+  width: 940px;
+  margin: 0 auto;
+}
+
+form {
+  margin: 40px 0;
+}
+
+form label,
+form legend {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.input-padrao {
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 50%;
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+.enviar {
+  width: 50%;
+  padding: 20px 0;
+  font-weight: bold;
+  font-size: 20px;
+  background: white;
+  color: orange;
+  border: 2px solid orange;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 1s all;
+}
+
+.enviar:hover {
+  background: orange;
+  color: white;
+  transform: scale(1.1);
+}
+
+table {
+  margin: 20px 0 40px;
+}
+
+thead {
+  background: #555555;
+  color: white;
+  font-weight: bold;
+}
+
+td,
+th {
+  border: 1px solid black;
+  padding: 8px 15px;
 }
